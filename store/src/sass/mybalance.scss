@@ -1,0 +1,160 @@
+@charset "utf-8";
+@import "../lib/hotcss-master/src/px2rem.scss";
+
+$designWidth:750;
+
+.container{
+
+    
+    .billtitle{
+        background-color: #fa511ccf;
+        .billtitle-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: px2rem(30);
+            font-size: px2rem(34);
+            color: white;  
+            a{
+                color: white;
+            }
+            .iconfont{
+                font-size: px2rem(36); 
+            }
+            h2{
+                font-size: px2rem(36);
+                padding-left: px2rem(100);
+            }
+            .details{ 
+                font-size: px2rem(32);
+                font-weight: 200;
+            }
+        }
+        .billtitle-middle{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            padding: px2rem(60) 0 px2rem(100) 0;
+            p{
+                font-size: px2rem(28);
+                font-weight: 300;
+                margin-bottom: px2rem(30);
+            }
+            span{
+                font-size: px2rem(60);
+            }
+        }
+        .billtitle-bottom{
+            background-color: #0000001c;
+            display: flex;
+            padding: px2rem(20) 0;
+            >div:first-child{
+                border-right: px2rem(2) solid #dec8c87a;
+            }
+            .billtitle-bottom-box{
+                flex: 1;  
+                text-align: center;
+                p{
+                    padding-top: px2rem(16);
+                    font-size: px2rem(24);
+                    color: #dec8c8;
+                }
+                em{
+                    display: block;
+                    color: white;
+                    font-size: px2rem(34);
+                    padding: px2rem(16) 0;
+                }
+            }
+        }
+    }
+
+    .billmiddle{
+        .billmiddle-up{
+            background-color: #f443361f;
+            display: flex;
+            justify-content: space-between;
+            padding: px2rem(20) px2rem(30) px2rem(36) px2rem(30);
+            .billmiddle-up-left{
+                span{
+                    font-size: px2rem(34);
+                } 
+            }
+            .billmiddle-up-right{
+                a{ 
+                    font-size: px2rem(28);
+                    color: gray;
+                    span{
+                        font-size: px2rem(26);
+                    }
+                }
+            }
+       }
+       .billmiddle-down{
+        margin-left:px2rem(30);
+          .billmiddle-down-item{
+            display: flex;
+            align-items: center;
+            padding: px2rem(30) 0;
+            border-bottom: 1px solid #8080802b;
+            .down-item-left{
+                color: #808080b8;
+                text-align: center;
+                font-size: px2rem(32); 
+                p:first-child{
+                    padding-bottom: px2rem(10);
+                }
+            }
+            .down-item-center{
+                flex: 1;
+                display: flex;
+                margin-left: px2rem(40);
+                .iconfont{
+                    font-size: px2rem(50);
+                    color: #b5587870;
+                } 
+                .down-item-center-text{
+                    margin-left: px2rem(20);
+                    span{
+                       display: block;
+                       font-size: px2rem(32);
+                       padding-bottom: px2rem(16);
+                    }
+                    p{
+                        font-size: px2rem(28);
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+            .down-item-right{
+                color: grey;
+                font-size: px2rem(40);
+                padding-right: px2rem(30);
+                .col{
+                    color: red;
+                }
+           }
+          }
+       }
+    }
+
+    .billbottom{
+        margin-top: px2rem(150);
+        text-align: center;
+        .billbottom-btn{ 
+            border: none;
+            padding: px2rem(24) px2rem(240);
+            background-color: #ff5722f2;
+            font-size: px2rem(36);
+            color: white;
+            border-radius: px2rem(40);
+        }
+        .billbottom-btn:focus{
+            outline: none;
+            box-shadow: inset 0 px2rem(2) px2rem(2) rgba(0, 0, 0, .075), 0 0 5px rgba(102, 175, 233, 0.6);
+        } 
+    }
+}

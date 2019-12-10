@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import "../lib/hotcss-master/src/px2rem.scss";
+
+$designWidth:750;
+
+.container{
+    .searchtitle{
+        padding: px2rem(20) px2rem(30);
+        display: flex;
+        align-items: center;
+        .iconfont{
+            color: grey;
+            font-size: px2rem(36);
+        }
+        .searchtitle-center{
+            flex: 1;
+            display: flex;   
+            background-color: whitesmoke;   
+            border-radius: px2rem(10);
+            overflow: hidden; 
+            margin: 0 px2rem(20) 0 px2rem(30);
+            span{
+                padding-left: px2rem(10);
+                font-size: px2rem(50);
+            }
+            input{ 
+                flex: 1;
+                font-size: px2rem(28); 
+                border:none;
+                background-color: whitesmoke;
+                outline: none;
+                color: grey;
+            }
+        }
+        .searchtitle-right{
+            font-size: px2rem(30);       
+        }
+    }
+    .searchtop{
+        background-color: whitesmoke;
+        padding: 0 px2rem(30);
+        .searchtop-up{
+            height: px2rem(100);
+            line-height: px2rem(100);
+            span{
+              display: block;
+              font-size: px2rem(50);
+              color: red;
+              float: left;
+              width: px2rem(54);
+            }
+            em{
+                font-size: px2rem(28);
+                display: block;
+                float: left;
+                color: grey;
+            }
+        }
+        .searchtop-down{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    height: px2rem(80);
+                    line-height: px2rem(80);
+                    background-color: white;
+                    padding: 0 px2rem(30);
+                    border-radius: px2rem(40);
+                    margin: 0 px2rem(30) px2rem(60) 0;
+                    font-size: px2rem(30);
+                }
+            }
+        }
+    }
+    .searchcenter{
+        background-color: whitesmoke;
+        padding: 0 px2rem(30);
+        .searchcenter-up{
+            height: px2rem(100);
+            line-height: px2rem(100);
+            color: grey;
+            span{
+               font-size: px2rem(40);
+               float: left;
+            }
+            em{
+                padding-left: px2rem(10);
+                font-size: px2rem(28);
+                float: left;
+            }
+        }
+        .searchcenter-down{
+            ul{
+                li{
+                    padding: px2rem(20) 0;
+                    font-size: px2rem(28);
+                }
+            }
+        }
+    }
+    .searchbottom{
+        background-color: whitesmoke;
+        text-align: center;
+        height: px2rem(100);
+        line-height: px2rem(100);
+        span,a{
+            color: grey;
+            font-size: px2rem(28);
+        }
+    }
+}

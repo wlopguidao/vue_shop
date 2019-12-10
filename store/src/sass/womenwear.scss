@@ -1,0 +1,117 @@
+@charset "utf-8";
+@import "../lib/hotcss-master/src/px2rem.scss";
+
+$designWidth:750;
+
+.container{
+
+   .womenwear-up{
+        .womenwear-title{
+            position: relative;
+            text-align: center;
+            margin: px2rem(30);
+            .iconfont{
+                color: grey;
+                font-size: px2rem(36);
+                position: absolute;
+                left:0;
+            }
+            h2{
+                font-size: px2rem(36);
+                font-weight: 700;
+            } 
+        }
+        .womenwear-condition{
+            ul{
+                display: flex; 
+                li{
+                    flex: 1;
+                    text-align: center;
+                    font-size: px2rem(30);  
+                    padding: px2rem(30) 0;
+                    letter-spacing: px2rem(2);
+                    a{
+                        color: gray;
+                        .iconfont{
+                            font-size: px2rem(24);
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .womenwear-down{
+        .product-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: px2rem(24) px2rem(30);
+            background-color: #9e9e9e2e;
+            span{
+              flex: 1;
+              font-size: px2rem(28);
+              color: gray;
+            }
+            a{
+                font-size: px2rem(36);  
+            }
+            .icon-shoulong{
+                margin-right: px2rem(36);
+            }
+            .icon-leimupinleifenleileibie--{
+                color: red;
+            }
+        }
+        .product-items{
+            .product-item{
+                display: flex;
+                margin-left: px2rem(30);
+                padding: px2rem(30) px2rem(30) px2rem(30) 0;
+                border-bottom: px2rem(2) solid #9e9e9e5e;
+                .item-left a{
+                    display: block;
+                } 
+                .item-left img{
+                    width: px2rem(250);
+                    height: px2rem(210);
+                    border-radius: px2rem(10);
+                }
+                .item-right{
+                    flex: 1;
+                    padding: px2rem(16) 0 px2rem(16) px2rem(16);
+                    .proname{
+                        font-size: px2rem(30);
+                        padding-bottom: px2rem(20);
+                    }
+                    .prodesc{
+                        font-size: px2rem(24);
+                        color: gray;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .item-rightbottom{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-top: px2rem(60);
+                        .price{
+                            flex: 1;
+                            font-size: px2rem(30);
+                            color: red;
+                            letter-spacing: px2rem(-2);
+                        }
+                        .iconfont{  
+                            font-size: px2rem(40);
+                            color: red;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+
+}

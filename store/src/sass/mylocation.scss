@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import "../lib/hotcss-master/src/px2rem.scss";
+
+$designWidth:750;
+
+.container{
+
+    .mylocation-title{
+        .mylocation-title-box{
+            margin: px2rem(30);
+            text-align: center;
+            position: relative;
+            .iconfont{
+                color: grey;
+                font-size: px2rem(36);
+                position: absolute;
+                left:0;
+            }
+            h2{ 
+                font-size: px2rem(36);
+                font-weight: 700;
+            }
+        }
+    }
+
+    .container-content{
+        .content-up{
+            padding: px2rem(26) px2rem(30);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                font-size: px2rem(34);
+            }
+            button{
+                background-color: white;
+                padding: px2rem(8) px2rem(26);
+                border:px2rem(1.5) solid #8080804d;
+                font-size: px2rem(28);
+                color: red;
+                border-radius: px2rem(30);
+                span{
+                    font-size: px2rem(28);
+                    padding-left: px2rem(10);
+                }
+            }
+            button:focus{
+                outline: none;
+                box-shadow: inset 0 px2rem(2) px2rem(2) rgba(0, 0, 0, .075), 0 0 5px rgba(102, 175, 233, 0.6);
+            }
+        }
+        .content-down{
+           p{
+               padding:px2rem(30);
+               font-size: px2rem(28);
+               background-color: #9e9e9e29;
+               color: gray;
+           }
+           .mylocation-items{
+               margin-left: px2rem(30); 
+               .mylocation-item a{
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   font-size: px2rem(32);
+                   padding: px2rem(32) px2rem(30) px2rem(32) 0;
+                   border-bottom: px2rem(2) solid #9e9e9e29;
+                   .iconfont{
+                       font-size: px2rem(28);
+                       color: gray;
+                   }
+               }
+           }
+        }
+    }
+
+}

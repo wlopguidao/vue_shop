@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的余额</title>
+    <link href="../css/mybalance.css" type="text/css" rel="stylesheet">
+    <link href="../css/common.css" type="text/css" rel="stylesheet">
+    <link href="../font/iconfont.css" type="text/css" rel="stylesheet">
+    <script src="../lib/hotcss-master/src/hotcss.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!--我的余额页面头部-->
+        <div class="billtitle">
+            <!--顶部标题-->
+            <div class="billtitle-title">
+                <a href="mycenter.html" class="iconfont icon-fanhui1"></a>
+                <h2>我的余额</h2>
+                <a href="mybalancedetails.html" class="details">账单明细</a>
+            </div>
+            <!--转账金额-->
+            <div class="billtitle-middle">
+                <p>剩余金额 (元)</p>
+                <span>702104.00</span>
+            </div>
+            <!--本月消费及累计消费-->
+            <div class="billtitle-bottom">
+                <div class="billtitle-bottom-box">
+                    <p>本月消费</p>
+                    <em>1200.09</em>
+                </div>
+                <div class="billtitle-bottom-box">
+                    <p>累计消费</p>
+                    <em>810010.09</em>
+                </div>
+            </div>
+        </div>
+
+        <!--我的余额页面中部-->
+        <div class="billmiddle">
+            <!--消费账单-->
+            <div class="billmiddle-up">
+                <div class="billmiddle-up-left">
+                    <span class="iconfont icon-fafangzhengshu"></span>
+                    <span class="billmiddle-up-text">最近两笔账单</span>
+                </div>
+                <div href="#" class="billmiddle-up-right">
+                    <a href="#">
+                        <em>全部</em>
+                        <span class="iconfont icon-gt"></span>
+                    </a>
+                </div>
+            </div>
+            <!--消费/充值信息-->
+            <div class="billmiddle-down">
+                <div class="billmiddle-down-item">
+                    <!--消费/充值日期-->
+                    <div class="down-item-left">
+                        <p>周 日</p>
+                        <p>08/20</p>
+                    </div>
+                    <!--消费/充值来源-->
+                    <div class="down-item-center">
+                        <div class="iconfont icon-jiantou"></div>
+                        <div class="down-item-center-text">
+                            <span>充 值</span>
+                            <p>来自中国银行 (6425)</p>
+                        </div>
+                    </div>
+                    <!--消费/充值金额-->
+                    <div class="down-item-right">
+                        <span>+2470</span>
+                    </div>
+                </div>
+                <div class="billmiddle-down-item">
+                    <!--消费/充值日期-->
+                    <div class="down-item-left">
+                        <p>周 五</p>
+                        <p>08/18</p>
+                    </div>
+                    <!--消费/充值来源-->
+                    <div class="down-item-center">
+                        <div class="iconfont icon-xiaofei"></div>
+                        <div class="down-item-center-text">
+                            <span>消 费</span>
+                            <p>购买[铝合金拉杆箱玩轮轴..]</p>
+                        </div>
+                    </div>
+                    <!--消费/充值金额-->
+                    <div class="down-item-right">
+                        <span class="col">-700</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--我的余额页面底部-->
+        <div class="billbottom">
+            <button class="billbottom-btn">充值</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

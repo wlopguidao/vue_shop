@@ -1,0 +1,52 @@
+.container .mylocation-title .mylocation-title-box {
+  margin: 0.64rem;
+  text-align: center;
+  position: relative; }
+  .container .mylocation-title .mylocation-title-box .iconfont {
+    color: grey;
+    font-size: 0.768rem;
+    position: absolute;
+    left: 0; }
+  .container .mylocation-title .mylocation-title-box h2 {
+    font-size: 0.768rem;
+    font-weight: 700; }
+
+.container .container-content .content-up {
+  padding: 0.55467rem 0.64rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .container .container-content .content-up span {
+    font-size: 0.72533rem; }
+  .container .container-content .content-up button {
+    background-color: white;
+    padding: 0.17067rem 0.55467rem;
+    border: 0.032rem solid #8080804d;
+    font-size: 0.59733rem;
+    color: red;
+    border-radius: 0.64rem; }
+    .container .container-content .content-up button span {
+      font-size: 0.59733rem;
+      padding-left: 0.21333rem; }
+  .container .container-content .content-up button:focus {
+    outline: none;
+    box-shadow: inset 0 0.04267rem 0.04267rem rgba(0, 0, 0, 0.075), 0 0 5px rgba(102, 175, 233, 0.6); }
+
+.container .container-content .content-down p {
+  padding: 0.64rem;
+  font-size: 0.59733rem;
+  background-color: #9e9e9e29;
+  color: gray; }
+
+.container .container-content .content-down .mylocation-items {
+  margin-left: 0.64rem; }
+  .container .container-content .content-down .mylocation-items .mylocation-item a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.68267rem;
+    padding: 0.68267rem 0.64rem 0.68267rem 0;
+    border-bottom: 0.04267rem solid #9e9e9e29; }
+    .container .container-content .content-down .mylocation-items .mylocation-item a .iconfont {
+      font-size: 0.59733rem;
+      color: gray; }

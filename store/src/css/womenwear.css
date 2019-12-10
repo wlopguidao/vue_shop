@@ -1,0 +1,81 @@
+.container .womenwear-up .womenwear-title {
+  position: relative;
+  text-align: center;
+  margin: 0.64rem; }
+  .container .womenwear-up .womenwear-title .iconfont {
+    color: grey;
+    font-size: 0.768rem;
+    position: absolute;
+    left: 0; }
+  .container .womenwear-up .womenwear-title h2 {
+    font-size: 0.768rem;
+    font-weight: 700; }
+
+.container .womenwear-up .womenwear-condition ul {
+  display: flex; }
+  .container .womenwear-up .womenwear-condition ul li {
+    flex: 1;
+    text-align: center;
+    font-size: 0.64rem;
+    padding: 0.64rem 0;
+    letter-spacing: 0.04267rem; }
+    .container .womenwear-up .womenwear-condition ul li a {
+      color: gray; }
+      .container .womenwear-up .womenwear-condition ul li a .iconfont {
+        font-size: 0.512rem;
+        vertical-align: middle; }
+
+.container .womenwear-down .product-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.512rem 0.64rem;
+  background-color: #9e9e9e2e; }
+  .container .womenwear-down .product-title span {
+    flex: 1;
+    font-size: 0.59733rem;
+    color: gray; }
+  .container .womenwear-down .product-title a {
+    font-size: 0.768rem; }
+  .container .womenwear-down .product-title .icon-shoulong {
+    margin-right: 0.768rem; }
+  .container .womenwear-down .product-title .icon-leimupinleifenleileibie-- {
+    color: red; }
+
+.container .womenwear-down .product-items .product-item {
+  display: flex;
+  margin-left: 0.64rem;
+  padding: 0.64rem 0.64rem 0.64rem 0;
+  border-bottom: 0.04267rem solid #9e9e9e5e; }
+  .container .womenwear-down .product-items .product-item .item-left a {
+    display: block; }
+  .container .womenwear-down .product-items .product-item .item-left img {
+    width: 5.33333rem;
+    height: 4.48rem;
+    border-radius: 0.21333rem; }
+  .container .womenwear-down .product-items .product-item .item-right {
+    flex: 1;
+    padding: 0.34133rem 0 0.34133rem 0.34133rem; }
+    .container .womenwear-down .product-items .product-item .item-right .proname {
+      font-size: 0.64rem;
+      padding-bottom: 0.42667rem; }
+    .container .womenwear-down .product-items .product-item .item-right .prodesc {
+      font-size: 0.512rem;
+      color: gray;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .container .womenwear-down .product-items .product-item .item-right .item-rightbottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.28rem; }
+      .container .womenwear-down .product-items .product-item .item-right .item-rightbottom .price {
+        flex: 1;
+        font-size: 0.64rem;
+        color: red;
+        letter-spacing: -0.04267rem; }
+      .container .womenwear-down .product-items .product-item .item-right .item-rightbottom .iconfont {
+        font-size: 0.85333rem;
+        color: red;
+        font-weight: 700; }
