@@ -1,0 +1,46 @@
+.container .mycollectop {
+  margin: 0.55467rem 0.64rem;
+  position: relative;
+  text-align: center; }
+  .container .mycollectop .iconfont {
+    color: gray;
+    font-size: 0.768rem;
+    position: absolute;
+    left: 0; }
+  .container .mycollectop h2 {
+    font-size: 0.768rem;
+    font-weight: 700; }
+
+.container .mycollecmiddle {
+  padding: 0.55467rem 0.64rem;
+  font-size: 0.59733rem;
+  color: #928e8e;
+  background-color: #9e9e9e26;
+  letter-spacing: 0.02133rem; }
+
+.container .mycollecbottom .mycollecbottom-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.64rem;
+  border-bottom: 0.02133rem solid #808080ad; }
+  .container .mycollecbottom .mycollecbottom-item .mycollecbottom-left img {
+    width: 4.26667rem;
+    height: 4.26667rem; }
+  .container .mycollecbottom .mycollecbottom-item .mycollecbottom-right {
+    margin-left: 0.42667rem;
+    padding: 0.42667rem 0;
+    flex: 1; }
+    .container .mycollecbottom .mycollecbottom-item .mycollecbottom-right .name {
+      font-size: 0.68267rem; }
+    .container .mycollecbottom .mycollecbottom-item .mycollecbottom-right .desc {
+      font-size: 0.55467rem;
+      padding: 0.34133rem 0 0.64rem 0;
+      color: gray;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 10.02667rem; }
+    .container .mycollecbottom .mycollecbottom-item .mycollecbottom-right .price {
+      padding-top: 0.42667rem;
+      color: red;
+      font-size: 0.64rem; }

@@ -1,0 +1,109 @@
+.container .ordertitle {
+  text-align: center; }
+  .container .ordertitle .ordertitle-up {
+    height: 2.13333rem;
+    line-height: 2.13333rem;
+    margin: 0 0.64rem;
+    position: relative; }
+    .container .ordertitle .ordertitle-up .iconfont {
+      color: grey;
+      font-size: 0.768rem;
+      position: absolute;
+      left: 0; }
+    .container .ordertitle .ordertitle-up h2 {
+      font-size: 0.768rem;
+      font-weight: 700; }
+  .container .ordertitle .ordertitle-down {
+    height: 1.92rem;
+    line-height: 1.92rem; }
+    .container .ordertitle .ordertitle-down ul {
+      display: flex; }
+      .container .ordertitle .ordertitle-down ul li {
+        flex: 1;
+        color: grey;
+        font-size: 0.68267rem; }
+      .container .ordertitle .ordertitle-down ul li:first-child {
+        border-bottom: 3px solid #f44336d9; }
+        .container .ordertitle .ordertitle-down ul li:first-child a {
+          color: #f44336d9; }
+
+.container .ordergoods {
+  background-color: #8080802b;
+  padding: 0.64rem 0 4.26667rem 0; }
+  .container .ordergoods .ordergoods-box {
+    padding-left: 0.64rem;
+    background-color: white; }
+    .container .ordergoods .ordergoods-box .ordergoods-box-items .box-items-title {
+      display: flex;
+      height: 2.56rem;
+      padding-right: 0.64rem;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #8080802b; }
+      .container .ordergoods .ordergoods-box .ordergoods-box-items .box-items-title .icon-fafangzhengshu {
+        font-size: 0.768rem; }
+      .container .ordergoods .ordergoods-box .ordergoods-box-items .box-items-title span {
+        font-size: 0.64rem;
+        color: grey; }
+    .container .ordergoods .ordergoods-box .ordergoods-box-items .box-items-item a {
+      display: flex;
+      padding: 0.34133rem 0;
+      border-bottom: 1px solid #8080802b; }
+      .container .ordergoods .ordergoods-box .ordergoods-box-items .box-items-item a .box-items-item-left img {
+        width: 3.41333rem;
+        height: 3.41333rem; }
+      .container .ordergoods .ordergoods-box .ordergoods-box-items .box-items-item a .box-items-item-right {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        height: 3.41333rem;
+        font-size: 0.68267rem;
+        margin-left: 0.64rem;
+        padding-right: 0.64rem; }
+        .container .ordergoods .ordergoods-box .ordergoods-box-items .box-items-item a .box-items-item-right .item-right-text p {
+          padding: 0.42667rem 0; }
+        .container .ordergoods .ordergoods-box .ordergoods-box-items .box-items-item a .box-items-item-right .item-right-text em {
+          display: block;
+          margin-top: 0.42667rem;
+          font-size: 0.55467rem;
+          color: grey; }
+        .container .ordergoods .ordergoods-box .ordergoods-box-items .box-items-item a .box-items-item-right .item-right-price span {
+          display: block;
+          margin-top: 0.42667rem; }
+  .container .ordergoods .ordergoods-operation {
+    background-color: white; }
+    .container .ordergoods .ordergoods-operation .ordergoods-box-calculate {
+      height: 1.70667rem;
+      line-height: 1.70667rem;
+      font-size: 0.55467rem;
+      padding-right: 0.64rem;
+      border-bottom: 1px solid #8080802b; }
+      .container .ordergoods .ordergoods-operation .ordergoods-box-calculate span {
+        float: right;
+        color: grey; }
+      .container .ordergoods .ordergoods-operation .ordergoods-box-calculate em {
+        color: red; }
+    .container .ordergoods .ordergoods-operation .ordergoods-box-close {
+      height: 2.13333rem;
+      padding-right: 0.64rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .container .ordergoods .ordergoods-operation .ordergoods-box-close button {
+        border: none;
+        width: 3.2rem;
+        height: 1.06667rem;
+        border-radius: 0.55467rem;
+        font-size: 0.55467rem; }
+      .container .ordergoods .ordergoods-operation .ordergoods-box-close button:focus {
+        outline: none;
+        box-shadow: inset 0 0.04267rem 0.04267rem rgba(0, 0, 0, 0.075), 0 0 5px rgba(102, 175, 233, 0.6); }
+      .container .ordergoods .ordergoods-operation .ordergoods-box-close button:first-child {
+        background-color: white;
+        border: 1.5px solid #8080802b;
+        color: grey;
+        margin-right: 0.42667rem; }
+      .container .ordergoods .ordergoods-operation .ordergoods-box-close button:last-child {
+        background-color: #f44336d9;
+        border: 1.5px solid gold;
+        color: white; }

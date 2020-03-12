@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的购物车</title>
+    <link href="../css/mycart.css" type="text/css" rel="stylesheet">
+    <link href="../css/publicstyle.css" type="text/css" rel="stylesheet">
+    <link href="../css/common.css" type="text/css" rel="stylesheet">
+    <link href="../font/iconfont.css" type="text/css" rel="stylesheet">
+    <script src="../lib/hotcss-master/src/hotcss.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!--购物车页面顶部标题-->
+        <div class="carttop">
+            <h2>购物车</h2>
+            <a href="javascript:void(0);" id="change">管理</a>
+        </div>
+
+        <!--购物车页面中部图片-->
+        <div class="cartmiddle">
+            <!--头部显示限时折扣-->
+            <div class="cartmiddle-top">
+                <span class="iconfont icon-shizhong"></span>
+                <span class="text">全场满30减10</span>
+            </div>
+            <!--中间显示添加的购物车商品-->
+            <div class="cartmiddle-tcenter">
+                <div class="cartmiddle-item">
+                    <!--商品左边单选按钮及图片-->
+                    <div class="cartmiddle-item-left">
+                        <span class="iconfont icon-danxuankuang"></span>
+                        <a href="#"><img src="../img/223002-15666570021e0d.jpg" alt=""></a>
+                    </div>
+                    <!--商品右边单图片信息-->
+                    <div class="cartmiddle-item-right">
+                        <!--商品名称及购买数量-->
+                        <div class="item-right-up">
+                            <p class="name">PITTA MASK甜甜圈</p>
+                            <em class="count">x1</em>
+                        </div>
+                        <!--商品价格及购买数量按钮-->
+                        <div class="item-right-down">
+                            <div class="item-right-down-price">
+                                <span>￥45.00</span>
+                            </div>
+                            <div class="item-right-down-number">
+                                <button>-</button>
+                                <span class="value">1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartmiddle-item">
+                    <!--商品左边单选按钮及图片-->
+                    <div class="cartmiddle-item-left">
+                        <span class="iconfont icon-danxuankuang1"></span>
+                        <a href="#"><img src="../img/223002-15666570021e0d.jpg" alt=""></a>
+                    </div>
+                    <!--商品右边单图片信息-->
+                    <div class="cartmiddle-item-right">
+                        <!--商品名称及购买数量-->
+                        <div class="item-right-up">
+                            <p class="name">PITTA MASK甜甜圈</p>
+                            <em class="count">x1</em>
+                        </div>
+                        <!--商品价格及购买数量按钮-->
+                        <div class="item-right-down">
+                            <div class="item-right-down-price">
+                                <span>￥45.00</span>
+                            </div>
+                            <div class="item-right-down-number">
+                                <button>-</button>
+                                <span class="value">1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartmiddle-item alter1">
+                    <!--商品左边单选按钮及图片-->
+                    <div class="cartmiddle-item-left">
+                        <span class="iconfont icon-danxuankuang1"></span>
+                        <a href="#"><img src="../img/223002-15666570021e0d.jpg" alt=""></a>
+                    </div>
+                    <!--商品右边单图片信息-->
+                    <div class="cartmiddle-item-right">
+                        <!--商品名称及购买数量-->
+                        <div class="item-right-up">
+                            <p class="name">PITTA MASK甜甜圈</p>
+                            <em class="count">x1</em>
+                        </div>
+                        <!--商品价格及购买数量按钮-->
+                        <div class="item-right-down">
+                            <div class="item-right-down-price">
+                                <span>￥45.00</span>
+                            </div>
+                            <div class="item-right-down-number">
+                                <button>-</button>
+                                <span class="value">1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---购物车页面底部全选按钮-->
+        <div class="cartbottom1" id="wind">
+            <div class="cartbottom-left">
+                <span class="iconfont icon-danxuankuang1"></span>
+                <em>全选</em>
+            </div>
+            <div class="cartbottom-center">
+                <span class="desc">不含运费</span>
+                <span class="price">合计：<i>￥135</i></span>
+            </div>
+            <div class="cartbottom-right">
+                <a href="#">去结算</a>
+            </div>
+        </div>
+
+        <!---购物车页面底部删除按钮-->
+        <div class="cartbottom2" id="del">
+            <div class="cartbottom-left">
+                <span class="iconfont icon-danxuankuang1"></span>
+                <em>全选</em>
+            </div>
+            <div class="cartbottom-right">
+                <a href="#">删除</a>
+            </div>
+        </div>
+
+        <!--菜单栏-->
+        <div class="menuchange">
+            <div class="menuchange-item">
+                <a href="../index.html">
+                    <!--菜单栏图片-->
+                    <div class="item-pic">
+                        <span class="iconfont icon-home col"></span>
+                    </div>
+                    <!--菜单栏名称-->
+                    <div class="item-text">
+                        <span>首页</span>
+                    </div>
+                </a>
+            </div>
+            <div class="menuchange-item">
+                <a href="procategory.html">
+                    <!--菜单栏图片-->
+                    <div class="item-pic">
+                        <span class="iconfont icon-leimupinleifenleileibie--"></span>
+                    </div>
+                    <!--菜单栏名称-->
+                    <div class="item-text">
+                        <span>分类</span>
+                    </div>
+                </a>
+            </div>
+            <div class="menuchange-item">
+                <a href="mycart.html" style="color: red;">
+                    <!--菜单栏图片-->
+                    <div class="item-pic">
+                        <span class="iconfont icon-gouwuche1"></span>
+                    </div>
+                    <!--菜单栏名称-->
+                    <div class="item-text">
+                        <span>购物车</span>
+                    </div>
+                </a>
+            </div>
+            <div class="menuchange-item">
+                <a href="mycenter.html">
+                    <!--菜单栏图片-->
+                    <div class="item-pic">
+                        <span class="iconfont icon-wode"></span>
+                    </div>
+                    <!--菜单栏名称-->
+                    <div class="item-text">
+                        <span>我的</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/mycart.js"></script>
+</body>
+
+</html>
