@@ -27,3 +27,7 @@ html,body,#app{
 .el-pagination{
     margin-top: 15px;
 }
+
+.el-cascader-menu__wrap{
+    margin-bottom: -780px !important;
+}

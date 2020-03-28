@@ -86,9 +86,7 @@ export default {
     //前端 登出
     logout() {
       this.$store.dispatch("LogOut");
-      if (this.token == "") {
-        this.$router.push("/login");
-      }
+      this.$router.push("/login");
     },
     //获取所有的菜单
     async getHomeMenuList() {
