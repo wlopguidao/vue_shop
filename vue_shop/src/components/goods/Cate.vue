@@ -100,7 +100,7 @@
       </span>
     </el-dialog>
 
-    <!--修改分类的对话框-->
+    <!--修改商品分类的对话框-->
     <el-dialog title="修改分类" :visible.sync="editCateVisible" width="50%">
       <!--内容主题区域-->
       <el-form
@@ -216,7 +216,7 @@ export default {
       const res = await CateApi.getCateListAll(this.queryInfo);
       //console.log(res);
       if (res.meta.status !== 200) {
-        return this.$Message.error("获取商品列表失败!");
+        return this.$Message.error("获取商品分类失败!");
       }
       this.catelist = res.data.result;
       this.total = res.data.total;
