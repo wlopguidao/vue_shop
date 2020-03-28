@@ -1,11 +1,12 @@
 import request from '@/utils/request'
 
 const LoginApi = {
-  loginByUsername: function (loginForm) {
+  //根据用户名和密码登录
+  loginByUnameAndPew: function (userInfo) {
     return request({
       url: 'login',
       method: 'POST',
-      data: loginForm
+      data: userInfo
     })
   }
 }

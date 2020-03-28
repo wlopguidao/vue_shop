@@ -3,6 +3,7 @@ html,body,#app{
     height: 100%;
     margin: 0;
     padding: 0;
+    /* min-width: 1366px; */
 }
 
 .el-breadcrumb{
@@ -17,6 +18,10 @@ html,body,#app{
 .el-table{
     margin-top: 15px;
     font-size: 12px;
+}
+
+.cell{
+    text-align: center;
 }
 
 .el-pagination{

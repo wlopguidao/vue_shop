@@ -25,7 +25,7 @@
           :default-active="activePath"
         >
           <!-- 一级菜单 -->
-          <el-submenu :index="item.id+''" v-for="item in menulist" :key="item.id">
+          <el-submenu :index="item.id+''" v-for="item in menuList" :key="item.id">
             <!-- 一级菜单模板区域 -->
             <template slot="title">
               <!-- 图标 -->
@@ -59,13 +59,11 @@
 </template>
 
 <script>
-import HomeApi from "@/api/home";
+import { mapGetters } from "vuex";
 export default {
   name: "Home",
   data() {
     return {
-      //左侧菜单数据
-      menulist: [],
       //一级菜单logo
       iconsObj: {
         "125": "iconfont icon-icon_user",
@@ -85,18 +83,20 @@ export default {
     this.activePath = window.sessionStorage.getItem("activePath");
   },
   methods: {
+    //前端 登出
     logout() {
-      window.sessionStorage.clear();
-      this.$router.push("/login");
+      this.$store.dispatch("LogOut");
+      if (this.token == "") {
+        this.$router.push("/login");
+      }
     },
     //获取所有的菜单
     async getHomeMenuList() {
-      const res = await HomeApi.getMenuList();
+      const res = await this.$store.dispatch("getMenuList");
       //console.log(res);
       if (res.meta.status !== 200) {
         return this.$Message.error("获取菜单列表失败!");
       }
-      this.menulist = res.data;
     },
     //点击菜单,切换菜单的折叠与展开
     toggleCollapse() {
@@ -107,6 +107,14 @@ export default {
       window.sessionStorage.setItem("activePath", activePath);
       this.activePath = activePath;
     }
+  },
+  computed: {
+    ...mapGetters({
+      //菜单数据
+      menuList: "menuList",
+      //token令牌
+      token: "token"
+    })
   }
 };
 </script>

@@ -1,7 +1,8 @@
 import request from '@/utils/request'
 
 const HomeApi = {
-    getMenuList: function () {
+    //获取所有菜单列表
+    getMenuListAll: function () {
         return request({
             url: 'menus',
             method: 'GET'

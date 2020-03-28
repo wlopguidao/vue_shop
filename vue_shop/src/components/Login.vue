@@ -41,7 +41,6 @@
 </template>
 
 <script>
-import LoginApi from "@/api/login";
 export default {
   name: "Login",
   data() {
@@ -70,14 +69,12 @@ export default {
     login() {
       this.$refs.loginFormRef.validate(async vaild => {
         if (!vaild) return;
-        const res = await LoginApi.loginByUsername(this.loginForm);
+        const res = await this.$store.dispatch("login", this.loginForm);
         if (res.meta.status !== 200) {
           return this.$Message.error("登陆失败!");
         }
         this.$Message.success("登陆成功!");
         //console.log(res);
-        //保存token
-        window.sessionStorage.setItem("token", res.data.token);
         this.$router.push("/home");
       });
     }
